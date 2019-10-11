@@ -7,12 +7,15 @@
   "scripts": {
     "build:api": "tsc",
     "start:api": "node dist/api/index.js",
+    "dev:client": "parcel src/client/index.html -d dist/client",
     "test": "mocha -r ts-node/register tests/*.ts"
   },
   "dependencies": {
     "koa": "^2.8.2",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.10.2"
   },
   "husky": {
     "hooks": {
@@ -28,6 +31,7 @@
     "chai": "^4.2.0",
     "husky": "^3.0.8",
     "mocha": "^6.2.1",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
     "ts-node": "^8.4.1",
