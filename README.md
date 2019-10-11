@@ -30,7 +30,10 @@ In order to start a development server, run:
 yarn dev:api
 ```
 
-This will start the API at `http://localhost:3000`
+This will start the API at `http://localhost:3000`. You can open up a browser and try the following URLs to see the API working:
+
+- `http://localhost:3000/music`
+- `http://localhost:3000/event`
 
 ### Client side
 
@@ -41,6 +44,8 @@ yarn dev:client
 ```
 
 This will serve the files at `http://localhost:1234`
+
+## Testing
 
 ```
 yarn test
