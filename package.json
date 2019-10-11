@@ -7,6 +7,7 @@
   "scripts": {
     "build:api": "tsc",
     "start:api": "node dist/api/index.js",
+    "dev:api": "yarn build:api && yarn start:api",
     "dev:client": "parcel src/client/index.html -d dist/client",
     "test": "mocha -r ts-node/register tests/*.ts"
   },
