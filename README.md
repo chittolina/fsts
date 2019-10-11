@@ -55,6 +55,7 @@ yarn test
 - [x] Add client side TypeScript support
 - [x] Add server side tests
 - [ ] Add client side tests
+- [ ] Add eslint on precommit
 
 ## License
 
