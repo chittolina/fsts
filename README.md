@@ -20,25 +20,34 @@ working fine before we can get started:
 yarn install
 ```
 
-## Building the application
+## Starting the application
 
 ### Server side
+
+In order to start a development server, run:
 
 ```
 yarn dev:api
 ```
 
+This will start the API at `http://localhost:3000`
+
 ### Client side
+
+In order to serve the client files, run:
 
 ```
 yarn dev:client
 ```
 
-## Running the tests (server side only)
+This will serve the files at `http://localhost:1234`
 
 ```
 yarn test
 ```
+
+> **NOTE**:
+> This will currently run tests for server side only.
 
 ## Roadmap
 
