@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "build:api": "tsc",
-    "start:api": "node dist/api/index.js"
+    "start:api": "node dist/api/index.js",
+    "test": "mocha -r ts-node/register tests/*.ts"
   },
   "dependencies": {
     "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
   },
   "husky": {
@@ -18,9 +20,14 @@
     }
   },
   "devDependencies": {
+    "@types/chai": "^4.2.3",
     "@types/koa": "^2.0.50",
+    "@types/koa-bodyparser": "^4.3.0",
     "@types/koa-router": "^7.0.42",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
     "husky": "^3.0.8",
+    "mocha": "^6.2.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
     "ts-node": "^8.4.1",
