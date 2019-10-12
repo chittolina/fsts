@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
+    "lint:api": "eslint src/api/**/*.ts --fix",
     "build:api": "tsc",
     "start:api": "node dist/api/index.js",
     "dev:api": "yarn build:api && yarn start:api",
