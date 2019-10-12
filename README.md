@@ -20,7 +20,7 @@ working fine before we can get started:
 yarn install
 ```
 
-## Starting the application
+## Starting development server
 
 ### Server side
 
@@ -44,6 +44,20 @@ yarn dev:client
 ```
 
 This will serve the files at `http://localhost:1234`
+
+## Building for production
+
+```
+yarn build:api
+```
+
+This will output the API generated files under `dist/api`.
+
+```
+yarn build:client
+```
+
+This will output the client generated files under `dist/client`.
 
 ## Testing
 
