@@ -3,7 +3,7 @@ type Event = {
   maxCapacity: number
 }
 
-const events: Array<Event> = [
+const events: Event[] = [
   {
     id: 1,
     maxCapacity: 1000,
@@ -15,5 +15,5 @@ const events: Array<Event> = [
 ]
 
 export default {
-  listEvents: () => events,
+  listEvents: (): Event[] => events,
 }

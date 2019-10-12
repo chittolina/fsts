@@ -6,7 +6,7 @@ type Music = {
   releaseDate: number
 }
 
-const musics: Array<Music> = [
+const musics: Music[] = [
   {
     title: 'Dolphin Dream',
     author: 'Larry Heard',
@@ -24,5 +24,5 @@ const musics: Array<Music> = [
 ]
 
 export default {
-  listMusics: () => musics,
+  listMusics: (): Music[] => musics,
 }
