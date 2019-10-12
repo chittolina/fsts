@@ -5,9 +5,10 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "lint:api": "eslint src/api/**/*.ts --fix",
-    "lint:client": "eslint src/client/**/*.tsx --fix",
-    "build:api": "tsc",
+    "lint:api": "tsc --noEmit --p src/api && eslint src/api/**/*.ts --fix",
+    "lint:client": "tsc --noEmit --p src/client --jsx react && eslint src/client/**/*.tsx --fix",
+    "build:api": "tsc --p src/api --outDir dist/api",
+    "build:client": "parcel build src/client/index.html -d dist/client",
     "start:api": "node dist/api/index.js",
     "dev:api": "yarn build:api && yarn start:api",
     "dev:client": "parcel src/client/index.html -d dist/client",
